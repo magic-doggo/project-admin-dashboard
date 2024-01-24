@@ -94,6 +94,34 @@ li > img {
     height: 30px;
 }
 
+.bell-profile {
+    display: flex;
+    grid-template-columns: 2fr 2fr 3fr;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bell-profile > img {
+    height: 30px;
+    width: 30px;
+    justify-self: center;
+}
+
+.husky {
+    border-radius: 50%;
+}
+
+.greeting > img {
+    height: 80px;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 .main {
     display: grid;
     grid-column: 2 / 3;
