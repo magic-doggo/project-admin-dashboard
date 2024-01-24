@@ -32,6 +32,29 @@
 
 .navigation {
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    padding: 0px;
+    /* grid-template-columns: 1fr 4fr; */
+}
+
+li {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.logo-text {
+    grid-column: 2 / 3;
+}
+
+li > img {
+    justify-self: center;
+    width: 20px;
+    height: 20px;
 }
 
 .header {
