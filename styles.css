@@ -114,12 +114,22 @@ li > img {
 
 .greeting > img {
     height: 80px;
+    grid-row: 1 / 3;
+    justify-self: center;
 }
 
 .greeting {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding: 10px 10px 10px 30px;
+    font-weight: bolder;
+}
+
+.greeting > :nth-child(3){
+    font-size: 25px;
+    align-self: start;
 }
 
 .main {
