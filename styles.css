@@ -132,6 +132,22 @@ li > img {
     align-self: start;
 }
 
+.options-buttons {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.options-buttons > button {
+    background-color: #0ea5e9;
+    color: white;
+    height: 36px;
+    border-radius: 22px;
+    font-weight: bolder;
+    border: none;
+}
+
 .main {
     display: grid;
     grid-column: 2 / 3;
