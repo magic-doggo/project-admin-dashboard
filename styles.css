@@ -154,6 +154,7 @@ li > img {
     grid-column: 2 / 3;
     grid-template-columns: 5fr 2fr;
     grid-template-rows: 1fr 1fr;
+    background-color: rgb(233, 227, 227);
 }
 
 .your-projects {
@@ -162,6 +163,11 @@ li > img {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 1fr 1fr;
     grid-auto-rows: 1fr;
+    gap: 15px;
+}
+
+.project-box {
+    background-color: white;
 }
 
 .projects-header {
@@ -169,12 +175,37 @@ li > img {
     grid-column: 1 / 3;
 }
 
-.announcements-box {
+.announcements {
     display: grid;
     grid-row: 1 / 2;
 }
 
-.tending-box {
+.announcements > p {
+    margin: 16px 10px 0 10px;
+    height: 30px; 
+    /* lazy, make  */
+}
+
+.announcements-box {
+    background-color: white;
+    margin: 0 10px 0 10px;
+}
+
+.site-maintenance {
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+
+.community-share-day {
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+
+.updated-privacy-policy {
+    margin: 10px;
+}
+
+.trending {
     display: grid;
     grid-row: 2 / 3;
 }
