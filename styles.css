@@ -78,6 +78,8 @@ li > img {
     background-color: rgb(211, 230, 236); 
     width: 80%;
     border-radius: 20px;
+    border: none;
+    padding-left: 10px;
 }
 
 .search-button {
@@ -164,10 +166,21 @@ li > img {
     grid-template-rows: 30px 1fr 1fr;
     grid-auto-rows: 1fr;
     gap: 15px;
+    padding: 0 10px;
+    margin-bottom: 55px;
 }
 
 .project-box {
     background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border-left: 8px solid rgb(228, 173, 56);
+}
+
+.project-box > p:nth-child(1) {
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 0;
 }
 
 .projects-header {
@@ -175,6 +188,7 @@ li > img {
     grid-column: 1 / 3;
     font-size: larger;
     font-weight: bolder;
+    padding-left: 6px;
 }
 
 .announcements {
@@ -194,6 +208,7 @@ li > img {
     background-color: white;
     margin: 0 10px 0 10px;
     padding: 16px;
+    border-radius: 20px;
 }
 
 
@@ -231,6 +246,7 @@ li > img {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border-radius: 20px;
 }
 
 .trending-row {
@@ -257,7 +273,6 @@ li > img {
 }
 
 .trending > p {
-    /* margin-left: 10px; */
     font-weight: bolder;
     font-size: larger;
     margin: 36px 0 12px 10px;
