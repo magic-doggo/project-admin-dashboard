@@ -62,7 +62,7 @@ li > img {
     display: grid;
     grid-column: 2 / 3;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 5fr 8fr;
 }
 
 .search-bar {
@@ -103,8 +103,8 @@ li > img {
 }
 
 .bell-profile > img {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     justify-self: center;
 }
 
@@ -183,7 +183,7 @@ li > img {
 .announcements > p {
     margin: 16px 10px 0 10px;
     height: 30px; 
-    /* lazy, make  */
+    /* lazy solution, maybe change later*/
 }
 
 .announcements-box {
@@ -206,6 +206,40 @@ li > img {
 }
 
 .trending {
-    display: grid;
+    /* display: grid; */
     grid-row: 2 / 3;
 }
+
+.trending-box {
+    background-color: white;
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-row {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    margin: 5px;
+}
+
+.trending-row > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.trending-project {
+    grid-column: 2 / 3;
+}
+
+.trending-project > p {
+    margin: 5px;
+}
+
+
+
+/* do minmax for projects */
