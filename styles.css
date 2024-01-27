@@ -1,12 +1,15 @@
-/* * {
-    border: 1px solid red;
-} */
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+}
 
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
     height: 90vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .sidebar {
@@ -14,7 +17,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     grid-template-rows: 2fr 6fr 5fr;
-    background-color: rgb(100, 178, 241);
+    background-color: #0ea5e9;
 }
 
 .logo {
@@ -29,25 +32,33 @@
 .logo > * {
     align-self: center;
     justify-self: start;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 5px;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(189deg) brightness(105%) contrast(100%);
 }
 
 .navigation {
     grid-row: 2 / 3;
     display: grid;
     grid-template-rows: 2fr 1fr;
+    font-size: larger;
 }
 
 ul {
     list-style-type: none;
     display: grid;
     padding: 0px;
-    /* grid-template-columns: 1fr 4fr; */
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(189deg) brightness(105%) contrast(100%);
+    font-weight: bolder;
 }
 
 li {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    padding: 10px;
 }
+
 .logo-text {
     grid-column: 2 / 3;
 }
@@ -102,6 +113,7 @@ li > img {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    font-weight: bolder;
 }
 
 .bell-profile > img {
@@ -247,6 +259,7 @@ li > img {
     flex-direction: column;
     gap: 10px;
     border-radius: 20px;
+    padding: 10px 0;
 }
 
 .trending-row {
@@ -270,6 +283,10 @@ li > img {
 
 .trending-project > p {
     margin: 5px;
+}
+
+.trending-project > p:nth-child(1) {
+    font-weight: bold;
 }
 
 .trending > p {
